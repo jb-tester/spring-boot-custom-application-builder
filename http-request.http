@@ -1,11 +1,6 @@
-###
-GET http://localhost:8075/second/secondController/test1
+###first
+GET http://localhost:8081/first/firstController/test1
 
+###second
+GET http://localhost:8082/second/secondController/test1
 
-
-###
-GET http://localhost:8074/first/firstController/test1
-
-
-
-###

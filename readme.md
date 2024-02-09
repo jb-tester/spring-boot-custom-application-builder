@@ -15,6 +15,7 @@ the beans defined in one of sibling configurations should not be available for a
 3) the beans from one web context are available for the sibling configuration (see `FirstController#secondCompo`)
 4) the configuration class not added to context (`NotIncludedConfiguration`) is still detected as included.
 
+https://youtrack.jetbrains.com/issue/IDEA-345682/Spring-Boot-correctly-detect-hierarchical-context-configured-via-SpringApplicationBuilder
 
 ### Problems with endpoints and HTTP Requests generation:
 
@@ -23,3 +24,5 @@ But these controllers are defined in the sibling configurations that use their o
 also on HTTP request generating for the mapping of one of sibling apps controller 2 request are generated
 They use the different context path , but same port and endpoint.
 But in this case only one mapping should be created.
+
+https://youtrack.jetbrains.com/issue/IDEA-345686/Spring-Boot-with-multiple-sibling-configurations-treat-endpoints-correctly
