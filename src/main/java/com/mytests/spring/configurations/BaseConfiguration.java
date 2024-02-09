@@ -22,11 +22,12 @@ public class BaseConfiguration {
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
-            System.out.println("--- beans is context:");
+            System.out.println("--- beans in base context:");
             Arrays.sort(ctx.getBeanDefinitionNames());
             for (String beanName : ctx.getBeanDefinitionNames()) {
                 System.out.println(beanName);
             }
+            System.out.println("--------------------------");
         };
     }
 
